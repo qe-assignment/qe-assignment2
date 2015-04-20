@@ -10,15 +10,16 @@ namespace FullContactApi
     public class MyFullContactApi : IFullContactApi
     {
         private const string UrlBase0 = @"https://api.fullcontact.com/v2/person.json?email=";
-        private const string UrlBase1 = @"&style=dictionary&apiKey=";
+        private const string UrlBase1 = @"&apiKey=";
 
         private readonly string _apiKey;
-        private readonly AsyncLock _mutex = new AsyncLock();
+        private readonly AsyncLock _mutex;
         private readonly HttpClient _httpClient;
 
         public MyFullContactApi(string apiKey)
         {
             _apiKey = apiKey;
+            _mutex = new AsyncLock();
             _httpClient = new HttpClient();
         }
 
@@ -32,7 +33,7 @@ namespace FullContactApi
                 response = await _httpClient.GetStringAsync(request);
             }
 
-            var jObject = JsonConvert.DeserializeObject(response);
+            var jObject = JsonConvert.DeserializeObject<FullContactPerson>(response);
             jObject.ToString();
             var person = new FullContactPerson();
 

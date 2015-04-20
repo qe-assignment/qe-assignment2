@@ -1,4 +1,4 @@
-﻿namespace FullContactApi.FullContactPersonItems.Demographics.LocationObjects
+﻿namespace FullContactApi.FullContactPersonItems.DemographicsItems.LocationObjects
 {
     public class Continent
     {

@@ -33,21 +33,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="FullContactPersonItems\Demographics\LocationObjects\City.cs" />
     <Compile Include="FullContactPersonItems\ContactInfoItems\ContactInfo.cs" />
     <Compile Include="FullContactPersonItems\ContactInfoItems\Chat.cs" />
-    <Compile Include="FullContactPersonItems\Demographics\Demographic.cs" />
-    <Compile Include="FullContactPersonItems\Demographics\LocationObjects\Continent.cs" />
-    <Compile Include="FullContactPersonItems\Demographics\LocationObjects\Country.cs" />
-    <Compile Include="FullContactPersonItems\Demographics\LocationObjects\County.cs" />
-    <Compile Include="FullContactPersonItems\Demographics\LocationObjects\State.cs" />
-    <Compile Include="FullContactPersonItems\DigitalFootprint.cs" />
+    <Compile Include="FullContactPersonItems\DemographicsItems\Demographics.cs" />
+    <Compile Include="FullContactPersonItems\DemographicsItems\LocationObjects\Continent.cs" />
+    <Compile Include="FullContactPersonItems\DemographicsItems\LocationObjects\County.cs" />
+    <Compile Include="FullContactPersonItems\DemographicsItems\LocationObjects\Country.cs" />
+    <Compile Include="FullContactPersonItems\DemographicsItems\LocationObjects\City.cs" />
+    <Compile Include="FullContactPersonItems\DemographicsItems\LocationObjects\State.cs" />
+    <Compile Include="FullContactPersonItems\DigitalFootprintItems\DigitalFootprint.cs" />
+    <Compile Include="FullContactPersonItems\DigitalFootprintItems\Score.cs" />
     <Compile Include="FullContactPersonItems\FullContactPerson.cs" />
-    <Compile Include="FullContactPersonItems\Demographics\LocationObjects\LocationDeduced.cs" />
+    <Compile Include="FullContactPersonItems\DemographicsItems\LocationObjects\LocationDeduced.cs" />
     <Compile Include="FullContactPersonItems\Organization.cs" />
-    <Compile Include="FullContactPersonItems\PhotoItems\GooglePlus.cs" />
-    <Compile Include="FullContactPersonItems\PhotoItems\LinkedIn.cs" />
-    <Compile Include="FullContactPersonItems\PhotoItems\Photo.cs" />
+    <Compile Include="FullContactPersonItems\Photo.cs" />
     <Compile Include="FullContactPersonItems\SocialProfile.cs" />
     <Compile Include="FullContactPersonItems\ContactInfoItems\WebSite.cs" />
     <Compile Include="IFullContactApi.cs" />
@@ -69,6 +68,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FullContactPersonItems\DigitalFootprintItems\Topic.cs" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
