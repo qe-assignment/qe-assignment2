@@ -32,7 +32,7 @@ namespace FullContactApi
                 response = await _httpClient.GetStringAsync(request);
             }
 
-            return JsonConvert.DeserializeObject<FullContactPerson>(response);
+            return await Task.Run(() => JsonConvert.DeserializeObject<FullContactPerson>(response));
         }
     }
 }
