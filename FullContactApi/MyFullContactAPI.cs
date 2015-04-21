@@ -2,7 +2,6 @@
 using System.Threading.Tasks;
 using FullContactApi.FullContactPersonItems;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using Nito.AsyncEx;
 
 namespace FullContactApi
@@ -33,11 +32,7 @@ namespace FullContactApi
                 response = await _httpClient.GetStringAsync(request);
             }
 
-            var jObject = JsonConvert.DeserializeObject<FullContactPerson>(response);
-            jObject.ToString();
-            var person = new FullContactPerson();
-
-            return person;
+            return JsonConvert.DeserializeObject<FullContactPerson>(response);
         }
     }
 }
