@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Text;
 
 namespace FullContactApi.FullContactPersonItems.ContactInfoItems
 {
@@ -9,10 +8,7 @@ namespace FullContactApi.FullContactPersonItems.ContactInfoItems
 
         public override string ToString()
         {
-            var stringBuilder = new StringBuilder();
-            stringBuilder.AppendLine("Website: ");
-            stringBuilder.AppendLine("  " + Url);
-            return stringBuilder.ToString();
+            return "        " + Url;
         }
     }
 }

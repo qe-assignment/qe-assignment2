@@ -14,18 +14,15 @@ namespace QE_Assignment2
 
         public void Run()
         {
-            string input;
             while (true)
             {
                 Console.WriteLine("Input the email address of the person to lookup: ");
                 Console.Write(">> ");
-                input = Console.ReadLine();
+                var input = Console.ReadLine();
                 if (input == "exit")
                     return;
 
                 Display(input);
-                Console.WriteLine("Request sent...");
-                Console.WriteLine();
             }
         }
 

@@ -18,14 +18,15 @@ namespace FullContactApi.FullContactPersonItems.ContactInfoItems
             stringBuilder.AppendLine(string.Format("    Friendly name: {0}", FriendlyName));
             stringBuilder.AppendLine(string.Format("    Full name: {0}", FullName));
             stringBuilder.AppendLine(string.Format("    Given name: {0}", GivenName));
-            stringBuilder.AppendLine("  Websites:");
+            stringBuilder.AppendLine("    Websites:");
             foreach (var webSite in WebSites)
             {
-                stringBuilder.AppendLine("  " + webSite);
+                stringBuilder.AppendLine(webSite.ToString());
             }
+            stringBuilder.AppendLine("    Chats:");
             foreach (var chat in Chats)
             {
-                stringBuilder.AppendLine("  " + chat);
+                stringBuilder.AppendLine(chat.ToString());
             }
 
             return stringBuilder.ToString();

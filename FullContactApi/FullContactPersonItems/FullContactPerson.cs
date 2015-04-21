@@ -20,8 +20,8 @@ namespace FullContactApi.FullContactPersonItems
 
         public override string ToString()
         {
-            // likelihood, contactinfo, socialprofiles
             var stringBuilder = new StringBuilder();
+            stringBuilder.AppendLine();
             stringBuilder.AppendLine(string.Format("Likelihood: {0:N2}", Likelihood));
             stringBuilder.Append(ContactInfo);
             foreach (var socialProfile in SocialProfiles)

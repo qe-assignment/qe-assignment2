@@ -18,14 +18,14 @@ namespace FullContactApi.FullContactPersonItems
         {
             var stringBuilder = new StringBuilder();
             stringBuilder.AppendLine("Social profile:");
-            stringBuilder.AppendLine("  Bio: " + Bio);
-            stringBuilder.AppendLine("  Type: " + Type);
-            stringBuilder.AppendLine("  TypeId: " + TypeId);
-            stringBuilder.AppendLine("  TypeName: " + TypeName);
-            stringBuilder.AppendLine("  Url: " + Url);
-            stringBuilder.AppendLine("  Id: " + Id);
-            stringBuilder.AppendLine("  Followers: " + Followers);
-            stringBuilder.AppendLine("  Following: " + Following);
+            stringBuilder.AppendLine("    Bio: " + Bio);
+            stringBuilder.AppendLine("    Type: " + Type);
+            stringBuilder.AppendLine("    TypeId: " + TypeId);
+            stringBuilder.AppendLine("    TypeName: " + TypeName);
+            stringBuilder.AppendLine("    Url: " + Url);
+            stringBuilder.AppendLine("    Id: " + Id);
+            stringBuilder.AppendLine("    Followers: " + Followers);
+            stringBuilder.AppendLine("    Following: " + Following);
 
             return stringBuilder.ToString();
         }

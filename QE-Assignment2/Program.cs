@@ -29,8 +29,6 @@ namespace QE_Assignment2
             var fullContactApi = new MyFullContactApi(apiKey);
             var inputLoop = new InputLoop(fullContactApi);
             inputLoop.Run();
-
-            Environment.Exit(0);
         }
     }
 }

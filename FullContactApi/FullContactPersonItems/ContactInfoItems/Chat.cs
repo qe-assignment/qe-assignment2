@@ -11,9 +11,8 @@ namespace FullContactApi.FullContactPersonItems.ContactInfoItems
         {
             var stringBuilder = new StringBuilder();
 
-            stringBuilder.AppendLine("Chat:");
-            stringBuilder.AppendLine("  " + Client);
-            stringBuilder.AppendLine("  " + Handle);
+            stringBuilder.AppendLine("        " + Client);
+            stringBuilder.AppendLine("        " + Handle);
 
             return stringBuilder.ToString();
         }
